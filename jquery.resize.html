@@ -1,0 +1,70 @@
+<!doctype html>
+
+<!-- A demonstration page for some hand-rolled jQuery plugins. -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!--body bgcolor="#E6E6FA" -->
+    <title>jQuery Resize Plugin Demos</title>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Sometimes, a plugin needs "companion" CSS.  That is fine. -->
+    <link rel="stylesheet" href="jquery.resize.css">
+  </head>
+    
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>jQuery Resize Plugin </h1>
+
+          <p class="lead">This page demonstrates the resize jQuery
+            plugin. The plugin includes callback functionality, which can be seen in the “Event Log” section of
+            this page.</p>
+        </div>
+      </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>Resize</h2>
+
+              <p>This plugin demonstrates low-level mouse event handling.  It is to be used for whatever you may need.</p>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h5 class="panel-title">Example</h5>
+                </div>
+                <div class="panel-body">
+                  <div><p class="resize-this">&nbsp;</p></div>
+
+                  <div id="img-resized" class = "image">
+                    <img src="url.jpg">
+                  </div>
+                  
+                  <br> </br>
+                  <div><p class="resize-this">Resize the picture and see the new dimensions of the image below!</code></p></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12">
+          <h3>Event Log</h3>
+          <h5>See the dimensions of the image as you resize it.</h5>
+
+          <pre class="event-log"></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- We wrap up by loading up jQuery, then Bootstrap, then our plugins,
+         then finally we actually use them. -->
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="jquery.resize.js"></script>
+    <script src="event-log.js"></script>
+    <!-- <will need to put our giphy api here -->
+  </body>
+</html>
